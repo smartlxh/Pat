@@ -36,3 +36,21 @@ bool isPrime(int a){
 }
 
 ```
+
+cmp函数的写法
+```
+bool cmp(int a,int b){
+  return a<b //小于
+}
+
+```
+
+优先权队列的使用
+```
+priority_queue<int,vector<int>,less<int>> q; 大顶堆
+priority_queue<int,vector<int>,greater<int>> q; 小顶堆
+q.pop()
+q.top()
+q.push()
+
+```
