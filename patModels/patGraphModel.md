@@ -109,7 +109,7 @@ void dfs1(int src,int dest,int curValue){
                 path.push_back(Graph[src][i]);
                 dfs1(i,dest,curValue+weight[src][i]);
                 path.pop_back();// 一定要pop 出来，这样才能遍历所有的可能路径
-                visited[i]=true;
+                visited[i]=false;
             }
         }
     }
