@@ -22,7 +22,7 @@ int findFather(int x){
 void Unionf(int a,int b){
     int faA = findFather(a);
     int faB = findFather(b);
-    if(faA!=faB) faA = faB;
+    if(faA!=faB) parent[faA] = faB;
 }
 
 
