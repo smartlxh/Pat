@@ -31,7 +31,7 @@ void buildTree(node* &root ,int l1,int r1,int l2,int r2){
         while(middle<=r2 && in[middle]!=value){
             middle++;
         }
-        buildTree(root->left, l1,l1+1+middle-1-l2, l2, middle-1);
+        buildTree(root->left, l1+1,l1+1+middle-1-l2, l2, middle-1);
         buildTree(root->right, r1-(r2-middle-1), r1, middle+1, r2);
     }
 }
